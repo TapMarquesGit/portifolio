@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
           className="md:w-1/3 flex justify-center md:justify-end"
         >
           <div className="w-64 h-64 md:w-72 md:h-72 rounded-full border-4 border-[#2c5a6e] overflow-hidden shadow-xl flex items-center justify-center bg-gray-200">
-            <img src="https://media.discordapp.net/attachments/1149814323749855252/1379257525131677706/img_srchttpsmedia.discordapp.netattachments11498143237498552521379255052585275482WhatsApp_Image_2025-06-02_at_21.21.00_75b29932.jpgex683f92ddis683e415dhm56439ce0e703293837e5d159fe084862b69_1.png?ex=683f952b&is=683e43ab&hm=169586e65c2f6b9444f3ae891c6327b4e5b2edfc7a412e78488895cf6605e483&=&format=webp&quality=lossless&width=960&height=960" alt="Perfil" width="100%" height="100%"/>
+            <img src={new URL('../images/perfil.png', import.meta.url).href} alt="Perfil" width="100%" height="100%"/>
           </div>
         </motion.div>
       </div>
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
         transform: 'translateY(-100%)',
       }}
       >
-        <img src="src/images/banner.png" alt="" width="35%" height="35%"/>
+        <img src={new URL('../images/banner.png', import.meta.url).href} alt="" width="35%" height="35%"/>
         <div>
         <span className="font-semibold" style={{
           fontSize: '42px',
