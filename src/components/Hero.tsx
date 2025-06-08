@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import useWindowSize from '../hooks/useWindowSize';
 const Hero: React.FC = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
