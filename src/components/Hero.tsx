@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     triggerOnce: true,
     threshold: 0.2
   });
-
+const { width } = useWindowSize();
   return (
     <motion.section 
       ref={ref}
@@ -67,14 +67,19 @@ const Hero: React.FC = () => {
         transform: 'translateY(-100%)',
       }}
       >
-        <img src={new URL('../images/banner.png', import.meta.url).href} alt="" width="35%" height="35%"/>
-        <div>
-        <span className="font-semibold" style={{
-          fontSize: '42px',
-          fontWeight: 'bold',
-          color: '#2c5a6e',
-        }}>Explore meu trabalho</span>
-        </div>
+        {width > 768 && (
+        <>
+          <img src={new URL('../images/banner.png', import.meta.url).href} alt="" width="35%" height="35%"/>
+
+          <div>
+          <span className="font-semibold" style={{
+            fontSize: '42px',
+            fontWeight: 'bold',
+            color: '#2c5a6e',
+          }}>Explore meu trabalho</span>
+          </div>
+        </>
+       )}
       </div>
       
       
